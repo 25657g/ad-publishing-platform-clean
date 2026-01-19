@@ -31,15 +31,13 @@ const adSchema = new mongoose.Schema(
       default: "pending",
     },
 
-    paymentRef: { type: String },
+    paymentRef: {
+      type: String, // Stripe PaymentIntent ID
+    },
 
     isActive: {
       type: Boolean,
       default: false,
-    },
-
-    expiresAt: {
-      type: Date,
     },
   },
   { timestamps: true }
