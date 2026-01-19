@@ -1,0 +1,11 @@
+# Secrets
+*.json
+.env
+.env.*
+backend/firebase-service-account.json.json
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
